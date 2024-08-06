@@ -12,6 +12,7 @@ Olá! Este desafio tem por objetivo avaliar a capacidade técnica de candidatos 
 1.  Faça um fork deste repositório para a sua conta pessoal do GitHub.
 2.  Siga as instruções do desafio.
 3.  Após finalizar, faça um pull request para este repositório com a solução do desafio.
+4.  Você tem até 4 dias a partir do recebimento deste teste para enviar a sua solução.
 
 ## O desafio
 1.  Utilizando a linguagem de sua preferência, desenvolva um programa que extraia o conteúdo do arquivo .txt disponibilizado e que depois salve os dados extraídos em um arquivo no formato .xlsx
