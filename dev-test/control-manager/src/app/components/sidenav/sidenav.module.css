@@ -1,0 +1,116 @@
+/* ========== SIDENAV AREA ========== */
+#sidenav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 280px;
+    height: 100vh;
+    background: var(--color-white);
+  }
+  
+  .sidenav_container{
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    justify-content: space-between;
+  }
+  
+  .logo{
+    align-items: center;
+    border-bottom: 3px solid var(--color-bg);
+    box-sizing: content-box;
+    color: var(--color-neutral-20);
+    display: flex;
+    font-size: 24px;
+    font-weight: 700;
+    height: 56px;
+    justify-content: center;
+    left: 0;
+    padding: 2% 0 8% 0;
+    position: sticky;
+    top: 0;
+    z-index: 500;
+  }
+  
+    /* ========== SIDENAV MENUS ========== */
+    .sideMenu{
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      width: 100%;
+    }
+  
+    .sideMenu_down{
+      margin: 50% 0 0  0;
+    }
+  
+    .side_footer{
+      animation: degrade 10s ease infinite;
+      background: linear-gradient(120deg, var(--color-light-blue), var(--color-blue), #6289f5, #4674f2, #2c55c7);
+      background-size: 300% 300%;
+      border-radius: 20px;
+      color: var(--color-neutral-10);
+      font-weight: 500;
+      margin: 5%;
+      padding: 50px 10px;
+    }
+
+    .side_footer_content{
+      margin: 0 8%;
+    }
+  
+    .title_footer{
+      color: var(--color-white);
+      text-align: justify;
+    }
+  
+    .menuItens{
+      border-radius: 2px;
+      height: 36px;
+      margin: 5% 0 0 6px;
+      padding: 4px;
+      width: 95%;
+    }
+  
+    /* ========== MENU LINKS STYLES AREA ========== */
+    .menuLinks{
+      color: var(--color-gray);
+      display: flex;
+      gap: 1rem;
+    }
+  
+    .menuItens_active{
+      border-right: 4px solid var(--color-blue);
+    }
+  
+    .menuLinks_active{
+      color: var(--color-neutral-30);
+      font-weight: bold;
+    }
+  
+    .icon_active{
+      color: var(--color-blue);
+    }
+  
+    .icon_active_logout{
+      color: var(--color-error);
+    }
+  
+    .menuLinks:hover{
+      color: var(--color-neutral-30);
+    }
+  
+
+    @keyframes degrade{
+      0%{
+          background-position: 0 50%;
+      }
+  
+      50%{
+          background-position: 100% 50%;
+      }
+  
+      100%{
+          background-position: 0 50%;
+      }
+    }

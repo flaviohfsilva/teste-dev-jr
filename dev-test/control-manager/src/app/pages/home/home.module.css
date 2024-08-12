@@ -1,0 +1,286 @@
+
+/* ========== HOME AREA ========== */
+#home{
+    position: relative;
+    width: calc(100% - 280px);
+    left: 280px;
+  }
+  
+  .home_container{
+    margin: 4% 2%;
+  }
+  
+    /* ========== HOME HEADER AREA ========== */
+    .home_header{
+      display: flex;
+      justify-content: space-between;
+    }
+  
+    .subtitle{
+      color: var(--color-neutral-30);
+      font-size: 22px;
+    }
+  
+    .title{
+      color: var(--color-neutral-10);
+      font-size: 32px;
+      font-weight: bold;
+    }
+  
+    .search_bar{
+      align-items: center;
+      background: var(--color-white);
+      border-radius: 20px;
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      padding: 8px;
+      transform: translateY(20px);
+    }
+  
+    .form_input{
+      all: unset;
+      background: var(--color-white);
+      border-radius: 10px;
+      font-size: 16px;
+      line-height: 20px;
+      padding: 10px;
+      position: relative;
+      width: 100%;
+    }
+  
+    .search_btn{
+      color: var(--color-neutral-20);
+      margin: 0 0 0 5%;
+    }
+  
+    /* ========== HOME DASBOARD AREA ========== */
+    .dash_content{
+      display: flex;
+      justify-content: space-between;
+      margin: 4% 0 0 0;
+    }
+  
+    .card_dash{
+      background-color: var(--color-white);
+      border-radius: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 26px 30px;
+      width: 350px;
+    }
+
+
+    .card_title{
+      display: flex;
+      /* justify-content: space-around; */
+      gap: 2rem;
+      margin: 0 0 5% 0;
+      padding: 2%;
+    }
+
+   
+    .title_dash{
+      color: var(--color-neutral-20);
+      font-size: 20px;
+      font-weight: bolder;
+      margin: 0 0 5% 0;
+    }
+  
+    .number_user{
+      color: var(--color-blue);
+      font-size: 30px;
+    }
+  
+    .card_dash:nth-child(1){
+      color: var(--color-white);
+      background-color: var(--color-light-blue);
+    }
+  
+    .icon_dash{
+      background: var(--color-light-blue);
+      border-radius: 50%;
+      cursor: pointer;
+      height: 43px;
+      padding: 10px;
+      text-align: center;
+      transition: 0.5s;
+      width: 43px;
+    }
+  
+    .icon_dash:hover{
+      transform: translateY(-2px);
+    }
+  
+    /* ========== BTN DASBOARD AREA ========== */
+    .btn{
+      overflow: hidden;
+      position: relative;
+      transition: .5s ease-in;
+    }
+  
+    .btn::before{
+        background: var(--color-light-blue);
+        content: "";
+        height: 0;
+        left: 0;
+        position: absolute;
+        transition: .8s ease-in;
+        width: 100%;
+        z-index: -1;
+      }
+  
+    .btn_new{
+      border: 2px solid var(--color-light-blue);
+      border-radius: 10px;
+      cursor: pointer;
+      color: var(--color-neutral-20);
+      font-size: 18px;
+      margin: 0 0 0 54%;
+      padding: 5px 10px;
+      text-align: center;
+      z-index: 0;
+    }
+  
+    .btn_new::before{
+      bottom: 0;
+      border-radius: 22% 22% 0 0;
+    }
+  
+  .btn_new:hover{
+      border: 2px solid var(--color-light-blue);
+      color: var(--color-neutral-20);
+      transform: translateY(-5px);
+  }
+  
+  .btn_new:hover::before{
+      height: 108%;
+  }
+    
+  
+  /* ========== HOME USER DASBOARD AREA ========== */
+  .dash_content_user{
+    display: flex;
+    gap: 2rem;
+    justify-content: space-between;
+    margin: 2% 0 0 0;
+  }
+  
+  .dash_user{
+    background: var(--color-white);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2%;
+    height: 400px;
+    width: 520px;
+  }
+  
+  .title_user{
+    margin: 0 0 8% 0;
+  }
+  
+  .perfil_info{
+    cursor: pointer;
+    display: flex;
+    gap: 1.5rem;
+    margin: 8% 0 0 0;
+  }
+
+  .perfil_texts{
+    display: flex;
+    flex-direction: column;
+    gap: .3rem;
+  }
+  
+  .perfil_title{
+    color: var(--color-neutral-20);
+  }
+  
+  .perfil_subtitle{
+    color: var(--color-neutral-30)
+  }
+  
+  .btn_view_more{
+    color: var(--color-blue);
+    display: flex;
+    font-size: 18px;
+    margin: 8% 0 0 70%;
+    transition: 0.5s;
+    width: 40%;
+    /* transform: translateX(240px); */
+  }
+  
+  .btn_view_more:hover{
+    color: var(--color-dark-blue);
+  }
+  
+  /* ========== HOME DELETED USER DASBOARD AREA ========== */
+  .dash_user_deleted{
+    background: var(--color-white);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2%;
+    width: 68%;
+    height: 400px;
+  }
+
+  .title_user_deleted{
+    margin: 0 0 2% 0;
+  }
+
+  .perfil_info_deleted{
+    border-bottom: 2px solid var(--color-bg);
+    cursor: pointer;
+    display: flex;
+    gap: 1.5rem;
+    margin: 2% 0 0 0;
+    padding: 0 0 2% 0;
+  }
+
+  .perfil_user_deleted{
+    max-height: 300px; 
+    overflow-y: auto;  
+    /* padding: 10px;      */
+  }
+
+  /* ================= DASHBOARD USER DELETED - SCROLL BAR AREA ================= */
+  .perfil_user_deleted::-webkit-scrollbar {
+    width: 8px; /* Largura da barra de rolagem */
+  }
+
+  .perfil_user_deleted::-webkit-scrollbar-track {
+    background: var(--color-bg); /* Cor do trilho da barra de rolagem */
+    border-radius: 5px;
+  }
+
+  .perfil_user_deleted::-webkit-scrollbar-thumb {
+    background: var(--color-light-blue); /* Cor do "polegar" da barra de rolagem */
+    border-radius: 5px;
+    border: 3px solid var(--color-black); /* Adiciona uma borda ao redor do "polegar" */
+  }
+
+  .perfil_user_deleted::-webkit-scrollbar-thumb:hover {
+    background:var(--color-light-blue);
+  }
+
+
+  /* ================= SNACKBAR  ================= */
+  .message {
+    background-color: #d4edda;
+    border-radius: 5px;
+    color: #155724;
+    display: flex;
+    font-size: 18px;
+    font-weight: bold;
+    gap: 1rem;
+    margin: 2% 0;
+    padding: 10px;
+    transition: opacity 0.5s ease-out;
+    width: 50%;
+  } 
+  
