@@ -1,0 +1,108 @@
+/* ========== MODAL AREA ========== */
+
+.overlay{
+    align-items: center;
+    background-color: rgb(0, 0, 0, 0.7);
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 1000;
+  }
+
+  .modal_container{
+    background: var(--color-white);
+    border-radius: 8px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    height: 450px;
+    margin: auto; 
+    max-width: 500px;
+    padding: 2%;
+    width: 100%; 
+  }
+
+  /* ========== MODAL HEADER AREA ========== */
+
+  .modal_header{
+    display: flex;
+    justify-content: space-between;
+
+  }
+
+  .btn_close{
+    transform: translate(52px, -45px); 
+  }
+
+  .icon_close{
+    background: var(--color-light-error);
+    border-radius: 50%;
+    cursor: pointer;
+    color: var(--color-white);
+    height: 36px;
+    padding: 6px;
+    /* text-align: center; */
+    transition: 0.5s;
+    width: 36px;
+  }
+
+  .modal_title{
+    color: var(--color-neutral-10);
+    font-size: 28px;
+    margin: 0 0 10% 0;
+  }
+  
+  /* ========== MODAL FORM AREA ========== */
+
+  .input_field{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Roboto', sans-serif;
+    margin: 3% 0;
+  }
+
+  .input_field label{
+    color: var(--color-off-white);
+    margin: 2% 0 5%;
+    width: 80%;
+  }
+
+  .form_input{
+    all: unset;
+    background: var(--color-bg);
+    /* // border: 1px solid var(--color-strong-pink); */
+    border-radius: 6px;
+    color: var(--color-dark-green);
+    font-size: 16px;
+    line-height: 20px;
+    padding: 16px 12px;
+    position: relative;
+    width: 90%;
+  }
+
+  .form_input:focus-visible{
+    border: 2px solid var(--color-blue);
+  }
+
+  .form_input:-webkit-autofill{
+    box-shadow: inset 0 0 0 32px var(--background-color) !important;
+    -webkit-text-fill-color: var(--color-text);
+  }
+
+  .btn_form{
+    background: var(--color-light-blue);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: var(--color-neutral-10);
+    font-size: 18px;
+    margin: 5% 0 0 60%;
+    padding: 10px 20px;
+    transition: .5s;
+  }
+
+  .btn_form:hover{
+    transform: translateY(2px);
+  }

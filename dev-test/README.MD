@@ -90,3 +90,4 @@ Foi feita um arquivo de interface para garantir a tipagem dos dados de entrada p
 A pasta 'services' é onde está sendo feita a integração com a API
 A pasta 'pages' está as páginas do Front-end
 A pasta 'components' está todos os componentes utilizados no Front-end
+
